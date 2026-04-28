@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #97ceff, #a8f3f7);
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* INICIO */
+.inicio {
+    margin-top: 70px;
+}
+
+.foto {
+    width: 130px;
+    border-radius: 50%;
+    border: 4px solid rgb(217, 0, 255);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+/* TITULOS */
+h1 {
+    margin: 15px 0 5px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subtitulo {
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* BOTONES PRO */
+.botones button {
+    margin: 8px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #8b9ff9, #a759f5);
+    color: rgb(0, 0, 0);
+
+    font-weight: 600;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    /* PROFUNDIDAD */
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* HOVER (brillo + elevación) */
+.botones button:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(200, 0, 255, 0.6);
+}
+
+/* CLICK (efecto presionado) */
+.botones button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* SECCIONES (tarjeta pro) */
+.seccion {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #ffedff, #e9c1ff);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        0 0 20px rgba(0, 200, 255, 0.2);
+
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: all 0.5s ease;
+}
+
+/* CUANDO APARECE */
+.seccion.activa {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* LISTA */
+ul {
+    text-align: left;
+    display: inline-block;
+}
+
+/* OCULTO */
+.oculto {
+    display: none;
+}
+
+
+
+/* BOTÓN FLOTANTE */
+.btn-juego {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.btn-juego:hover {
+    transform: scale(1.1);
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENIDO DEL JUEGO */
+.modal-contenido {
+    background: #111;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+/* CANVAS */
+canvas {
+    background: black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* OCULTO */
+.oculto {
+    display: none;
+}

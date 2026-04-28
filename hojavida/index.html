@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio Maia</title>
+
+    <!-- Fuente bonita -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INICIO -->
+    <div class="inicio">
+        <img src="img5.jpg" class="foto">
+
+        <h1>Maia Stephanie Colorado Arenas</h1>
+        <p class="subtitulo">💻 Análisis y Desarrollo de Software</p>
+
+        <div class="botones">
+            <button onclick="mostrar('perfil')">👤 Perfil</button>
+            <button onclick="mostrar('estudios')">🎓 Estudios</button>
+            <button onclick="mostrar('habilidades')">💻 Habilidades</button>
+            <button onclick="mostrar('proyectos')">🚀 Proyectos</button>
+            <button onclick="mostrar('contacto')">📞 Contacto</button>
+        </div>
+    </div>
+
+    <!-- PERFIL -->
+    <div id="perfil" class="seccion oculto">
+        <h2>👤 Perfil</h2>
+        <p>
+            Estudiante en formación de análisis y desarrollo de software con conocimientos en HTML, CSS y JavaScript.
+            Me caracterizo por ser creativa, responsable y con ganas de crear soluciones digitales innovadoras.
+        </p>
+    </div>
+
+    <!-- ESTUDIOS -->
+    <div id="estudios" class="seccion oculto">
+        <h2>🎓 Estudios</h2>
+        <p><strong>✔ Bachillerato:</strong> Finalizado</p>
+        <p><strong>✔ Tecnólogo en Análisis y Desarrollo de Software:</strong> En proceso</p>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div id="habilidades" class="seccion oculto">
+        <h2>💻 Habilidades Técnicas</h2>
+        <ul>
+            <li> HTML – Estructura web</li>
+            <li> CSS – Diseño y estilos</li>
+            <li> JavaScript – Interactividad</li>
+            <li> Diseño de interfaces</li>
+            <li> Lógica de programación</li>
+            <li> Juegitos</li>
+        </ul>
+    </div>
+
+    <!-- PROYECTOS -->
+    <div id="proyectos" class="seccion oculto">
+        <h2>🚀 Proyectos</h2>
+        <p>✔ Hoja de vida interactiva en HTML, CSS y JavaScript</p>
+        <p>✔ Diseño de interfaces para proyectos académicos</p>
+    </div>
+
+    <!-- CONTACTO -->
+    <div id="contacto" class="seccion oculto">
+        <h2>📞 Contacto</h2>
+        <p>📧 Correo: maiastephaniec1@gmail.com</p>
+        <p>📱 Teléfono: 301 470 8324</p>
+        <p>📍: Chía, Cundinamarca</p>
+    </div>
+    <!-- BOTÓN PARA ABRIR EL JUEGO -->
+    <button class="btn-juego" onclick="abrirJuego()">🎮 Quieres jugar?</button>
+    
+    <!-- MODAL DEL JUEGO -->
+    <div id="modalJuego" class="modal oculto">
+        <div class="modal-contenido">
+    
+            <button class="cerrar" onclick="cerrarJuego()">✖</button>
+    
+            <h2>🐍 Serpientita </h2>
+    
+            <canvas id="game" width="300" height="300"></canvas>
+            <p>Puntos: <span id="score">0</span></p>
+    
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
